@@ -1,0 +1,43 @@
+# Simpson Aliyah
+# 9/15/26
+# Perform Math Calculations
+
+print("-------- Calculating Exponents --------")
+
+print()
+print()
+
+# Get interger values from user
+base_value =int(input("Enter the base value: "))
+exponent = int(input("Enter the exponent value: "))
+
+# Calculate the answer
+answer = base_value ** exponent
+
+#Show datatype of a specific variable
+print(type(answer))
+
+# Display the actual answer to the user
+print(base_value, "raised to the power of", exponent, "is", answer)
+
+print()
+print()
+
+print("-------- Addition and Subtraction ---------")
+
+print()
+
+# Get starting value from user
+starting_value = int(input("Enter the starting value: "))
+
+# Get value to add
+adding_value = int(input("Enter a value to add: "))
+
+# Get value to subtract
+subtracting_value = int(input("Enter a value to subtract: "))
+
+# Calculate
+answer2 = starting_value + adding_value - subtracting_value
+
+# Display the answer2
+print(starting_value, "+", adding_value, "-", subtracting_value, "is", answer2)
