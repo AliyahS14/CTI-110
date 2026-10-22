@@ -6,9 +6,9 @@
 money= float(input("Enter an amount of money: $"))
 
 # Convert money into an interger
-money_int = int(money * 100)
+money_int = round(money * 100)
 
-print(money_int)
+print(f"money_int: {money}")
 
 # Determine how many dollars are needed
 num_dollars = money_int // 100
@@ -27,8 +27,8 @@ num_nickels = remaining_money // 5
 remaining_money = remaining_money %5
 
 # Determine how many pennies are needed
-num_pennies = remaining_money // 1
-remaining_money = remaining_money %1
+num_pennies = remaining_money
+
 
 if num_dollars > 0:
     if num_dollars == 1:
@@ -38,13 +38,13 @@ else:
 
 if num_quarters > 0:
     if num_quarters == 1:
-     print(f"{num_quarters} Quarter")
+        print(f"{num_quarters} Quarter")
 else:
     print(f"{num_quarters} Quarters")
 
 if num_dimes > 0:
     if num_dimes == 1:
-     print(f"{num_dimes} Dime")
+        print(f"{num_dimes} Dime")
 else:
     print(f"{num_dimes} Dimes")
 
@@ -59,5 +59,3 @@ if num_pennies > 0:
         print(f"{num_pennies} Penny")
 else:
     print(f"{num_pennies} Pennies")
-
-    
